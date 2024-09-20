@@ -19,10 +19,32 @@ clickButton.addEventListener('click', () => {
 });
 
 // Event listener for the upgrade button
-upgradeButton.addEventListener('click', () => {
-    if (points >= 10) {
-        points -= 10; // Cost of the upgrade
-        pointsPerSecond += 1; // Increase points per second
+upgradeButton1.addEventListener('click', () => {
+    if (points >= 100) {
+        points -= 100; // Cost of the upgrade
+        pointsPerSecond += 2; // Increase points per second
+        pointsDisplay.textContent = points;
+        pointsPerSecondDisplay.textContent = pointsPerSecond;
+    } else {
+        showPopup("Not enough points for an upgrade!");
+    }
+});
+
+upgradeButton2.addEventListener('click', () => {
+    if (points >= 120) {
+        points -= 120; // Cost of the upgrade
+        pointsPerSecond += 8; // Increase points per second
+        pointsDisplay.textContent = points;
+        pointsPerSecondDisplay.textContent = pointsPerSecond;
+    } else {
+        showPopup("Not enough points for an upgrade!");
+    }
+});
+
+upgradeButton3.addEventListener('click', () => {
+    if (points >= 1000) {
+        points -= 1000; // Cost of the upgrade
+        pointsPerSecond += 32; // Increase points per second
         pointsDisplay.textContent = points;
         pointsPerSecondDisplay.textContent = pointsPerSecond;
     } else {
