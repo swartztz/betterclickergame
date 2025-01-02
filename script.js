@@ -26,7 +26,7 @@ upgradeButton1.addEventListener('click', () => {
         pointsDisplay.textContent = points;
         pointsPerSecondDisplay.textContent = pointsPerSecond;
     } else {
-        showPopup("Not enough points for an upgrade!");
+        showPopup("Not enough Money for an upgrade!");
     }
 });
 
@@ -37,7 +37,7 @@ upgradeButton2.addEventListener('click', () => {
         pointsDisplay.textContent = points;
         pointsPerSecondDisplay.textContent = pointsPerSecond;
     } else {
-        showPopup("Not enough points for an upgrade!");
+        showPopup("Not enough Money for an upgrade!");
     }
 });
 
@@ -48,7 +48,7 @@ upgradeButton3.addEventListener('click', () => {
         pointsDisplay.textContent = points;
         pointsPerSecondDisplay.textContent = pointsPerSecond;
     } else {
-        showPopup("Not enough points for an upgrade!");
+        showPopup("Not enough Money for an upgrade!");
     }
 });
 
